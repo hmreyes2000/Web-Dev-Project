@@ -1,0 +1,429 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+p {
+    margin: auto;
+    padding: .5em;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: #28638e;
+    border: none;
+    padding: 0 20px 0 20px;
+    color: #ffffff;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.dark {
+    padding: 20px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*header*/
+
+header {
+    background-color: #69bfea;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: solid white;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: left;
+    display: block;
+    padding: 1em 3em 1em 3em;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 25px;
+}
+
+header .highlight,
+header .current a {
+    color: navy;
+    font-weight: bold;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    border-color: #28638e;
+}
+
+h1.page-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #40657c;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a:hover {
+    color: #28638e;
+    transition: 1s ease-out;
+}
+
+#main h1 {
+    font-size: 60px;
+}
+
+#main p {
+    font-size: 18px;
+}
+
+article#main-col {
+    float: left;
+    width: 100%;
+}
+
+#main-col h1 {
+    font-size: 40px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* footer */
+
+.footer-container {
+    background-color: #69bfea;
+    padding-bottom: 3em;
+}
+
+.footer {
+    width: 90%;
+    height: 10em;
+    background-color: #69bfea;
+    color: white;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    margin-right: 4em;
+    padding-top: 50px;
+}
+
+.footer-1 {
+    float: left;
+    width: 28%;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.footer-1 input {
+    width: 200px;
+    height: 38px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+.footer-1 button {
+    border-radius: 4px;
+}
+
+.footer-2 {
+    float: left;
+    width: 28%;
+    padding-left: 100px;
+}
+
+.footer-3 {
+    float: left;
+    width: 28%;
+    padding-left: 200px;
+}
+
+.footer-heading a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.footer-heading a:hover {
+    color: #28638e;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: rgb(170, 169, 169);
+}
+
+
+/*image carousel || image slideshow*/
+
+.slidershow {
+    width: 800px;
+    height: 400px;
+    margin: 25px auto;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#r5:checked~.s1 {
+    margin-left: -80%;
+}
+
+
+/*donation page*/
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+.col-25 {
+    -ms-flex: 25%;
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+input[type=text] {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: grey;
+    color: black;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: rgb(92, 92, 92);
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+hr.solid_2 {
+    border-top: 3px solid #bbb;
+    border-color: #28638e;
+    width: 100%;
+}
+
+#donation h3 {
+    text-align: left;
+}
+
+#donation p {
+    padding-right: 9em;
+    padding-top: 1em;
+    text-align: left;
+    position: absolute;
+}
+
+#outer {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    background-color: lightgrey;
+    color: black;
+    padding: 12px;
+    margin: 5px;
+    border: none;
+    width: 10%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #b4b4b4;
+}
+
+.button:focus {
+    background-color: #b4b4b4;
+}
+
+
+/*Submit Your Story Page*/
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #b4b4b4;
+    color: black;
+    padding: 24px 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 3em;
+}
